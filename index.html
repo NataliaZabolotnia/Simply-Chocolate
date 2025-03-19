@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header class="header hidden">
+        <header class="header">
             <div class="container header-container">
                 <div class="header-box">
                     <a class="logo" href="#"
@@ -60,7 +60,7 @@
             </div>
         </header>
         <!-- hero -->
-        <section class="hero container hidden">
+        <section class="hero container">
             <h1 class="title hidden"></h1>
             <p class="hero-descr">
                 Treat yourself or a loved one to our finest ingredients for a
@@ -81,7 +81,7 @@
             </div>
         </section>
         <!-- about -->
-        <section class="about container hidden">
+        <section class="about container">
             <h2 class="hidden"></h2>
             <div class="about-cont">
                 <ul class="about-list">
@@ -136,7 +136,7 @@
             </div>
         </section>
         <!-- section ingridiens -->
-        <section class="ingridiens container hidden">
+        <section class="ingridiens container">
             <div class="ingr-title">
                 <h2 class="ingr-deskr">
                     IT ALL ADDS UP TO ONE EXCEPTIONAL
@@ -269,7 +269,7 @@
             </ul>
         </section>
         <!-- made -->
-        <section class="made container hidden">
+        <section class="made container">
             <h2 class="made subtitle">
                 HOW IT’S<span class="ingr-taste"> MADE?</span>
             </h2>
@@ -378,7 +378,7 @@
             </div>
         </section>
         <!-- autor -->
-        <section class="autor container hidden">
+        <section class="autor container">
             <h2 class="autor-title">
                 <span class="orange">chocolate</span> is loved
             </h2>
@@ -463,12 +463,16 @@
 
                 <ul class="footer-contact-list">
                     <li class="contact-item">
-                        <a href="tel:+380684439426" class="contact-link"
+                        <a
+                            class="cont-link"
+                            href="tel:+380684439426"
+                            class="contact-link"
                             >+380 (68) 443-94-26</a
                         >
                     </li>
                     <li class="contact-item">
                         <a
+                            class="cont-link"
                             href="mailto:simplychoc@gmail.com"
                             class="contact-link"
                         >
@@ -478,10 +482,16 @@
                 </ul>
             </div>
             <ul class="scroll">
-                <li><a href="#" class="footer-link">Home</a></li>
+                <li>
+                    <a href="#" class="footer-link">Home</a>
+                </li>
                 <li><a href="#" class="footer-link">How it’s made?</a></li>
-                <li><a href="#" class="footer-link">Our products</a></li>
-                <li><a href="#" class="footer-link">Top sellers</a></li>
+                <li class="del">
+                    <a href="#" class="footer-link">Our products</a>
+                </li>
+                <li class="del">
+                    <a href="#" class="footer-link">Top sellers</a>
+                </li>
                 <li><a href="#" class="footer-link">Chocolate is loved</a></li>
             </ul>
             <form class="footer-form">
@@ -495,7 +505,7 @@
             </form>
         </footer>
         <!-- menu -->
-        <div class="modal-menu container hidden">
+        <div class="modal-menu container">
             <button type="button" class="menu-close">
                 <svg class="icon-menu-close" width="28" height="28">
                     <use href="./images/icons.svg#icon-close"></use>
@@ -513,12 +523,12 @@
                 </li>
             </ul>
             <div class="menu-svg">
-                <a href="">
+                <a class="icon-link" href="#">
                     <svg class="icon inst" width="22" height="22">
                         <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                 </a>
-                <a href="">
+                <a class="icon-link" href="#">
                     <svg class="icon" width="22" height="22">
                         <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
@@ -526,7 +536,7 @@
             </div>
         </div>
         <!-- modal -->
-        <div class="modal hidden">
+        <div class="modal">
             <button class="modal-btn" type="button">
                 <svg class="icons" width="24" height="24">
                     <use href="./images/icons.svg#icon-close"></use>

@@ -38,13 +38,14 @@ a {
     background-color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 60px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
+        margin-bottom: 40px;
     }
 }
 
@@ -53,6 +54,7 @@ a {
         min-width: 1168px;
         padding-left: 16px;
         padding-right: 16px;
+        margin-bottom: 100px;
     }
 }
 .hidden {
@@ -761,6 +763,7 @@ a {
 }
 
 .footer-text {
+    max-width: 300px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 24px;
@@ -806,6 +809,9 @@ a {
     text-align: start;
     color: #fff;
 }
+.cont-link {
+    color: #fff;
+}
 .scroll {
     display: flex;
     flex-direction: column;
@@ -819,6 +825,14 @@ a {
     line-height: 114%;
     letter-spacing: -0.02em;
     color: #fff;
+}
+.cont-link:hover,
+.cont-link:focus {
+    color: #fd9222;
+}
+.footer-link:hover,
+.footer-link:focus {
+    color: #fd9222;
 }
 .footer-btn {
     border-radius: 100px;
@@ -862,11 +876,21 @@ a {
         display: flex;
         flex-direction: row;
         gap: 24px;
+        width: 304px;
+    }
+    .del {
+        display: none;
     }
 }
 @media screen and (min-width: 1168px) {
     .footer {
-        width: 1200px;
+        min-width: 1200px;
+    }
+    .scroll {
+        width: 320px;
+    }
+    .footer-text {
+        margin-right: 672px;
     }
 }
 /* menu */
@@ -874,9 +898,8 @@ a {
 .modal-menu {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left: 24px;
+
     width: 375px;
     height: 812px;
     background-color: #1e1823;
@@ -927,7 +950,7 @@ a {
 .inst {
     margin-right: 18px;
 }
-.menu-svg .icon {
+.icon-link {
     fill: transparent;
     stroke: #fff;
 }
@@ -1140,6 +1163,8 @@ a {
     resize: none;
 }
 .modal-form-box {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 14px;
 }
 
@@ -1213,4 +1238,13 @@ a {
 
 .hidden {
     display: none;
+}
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 517px;
+        height: 794px;
+    }
+    .modal-menu {
+        display: none;
+    }
 }
